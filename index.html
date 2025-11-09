@@ -7,11 +7,177 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
   <body class="font-mono bg-gray-100">
-    <!-- Navbar start-->
-    <!-- Navbar end-->
-    <!-- Home start-->
-    <!-- Home end-->
-    <!-- Calendar start-->
+    <!----------------------------- Navbar start --------------------------->
+    <nav
+      class="font-sans bg-white rounded-xl w-full max-w-5xl mx-auto p-4 flex flex-wrap items-center justify-between"
+    >
+      <!-- Logo -->
+      <div class="flex items-center space-x-2 flex-shrink-0">
+        <h1 class="text-4xl font-bold font-sans">Wash-Me</h1>
+      </div>
+
+      <!-- Tabs -->
+      <div
+        class="flex flex-wrap justify-center sm:justify-start space-x-2 sm:space-x-3 mt-2 sm:mt-0 flex-1"
+      >
+        <a href="#" class="text-gray-700 hover:text-blue-500 font-medium"
+          >Home</a
+        >
+        <a href="#" class="text-gray-700 hover:text-blue-500 font-medium"
+          >Calendar</a
+        >
+        <a href="#" class="text-gray-700 hover:text-blue-500 font-medium"
+          >Chat</a
+        >
+        <a href="#" class="text-gray-700 hover:text-blue-500 font-medium"
+          >Wallet</a
+        >
+      </div>
+
+      <!-- Icons -->
+    <div class="flex items-center space-x-1 mt-2 sm:mt-0">
+      <!-- Language -->
+      <button class="text-gray-700 hover:text-blue-500">
+        <img src="Icons/language.png" alt="Language icon" class="h-4 w-4" />
+      </button>
+      <!-- Notifications -->
+      <button class="text-gray-700 hover:text-blue-500 relative">
+        <img src="Icons/notification2.png" alt="Notification icon" class="h-4 w-4" />
+      </button>
+      <!-- Profile -->
+      <button class="text-gray-700 hover:text-blue-500 relative">
+        <img src="Icons/profile.png" alt="User icon" class="h-4 w-4" />
+      </button>
+    </nav>
+    <!----------------------------- Navbar end ----------------------------->
+
+    <!----------------------------- Home start ----------------------------->
+    <!-- Main content -->
+    <div
+      class="font-sans p-8 space-y-5 bg-white rounded-xl shadow-2xl w-full max-w-3xl mx-auto"
+    >
+      <!-- Greeting -->
+      <div>
+        <h2 class="text-2xl font-bold font-sans">
+          Hi, Mahmoud <span class="animate-wave">👋</span>
+        </h2>
+        <p class="font-sans text-gray-700 mt-1">Ready to wash today?</p>
+      </div>
+
+      <!-- Next booking -->
+      <div class="font-sans bg-cyan-100 rounded-lg p-5">
+        <p class="text-gray-800">Next booking:</p>
+        <p class="font-medium">Washer 1 - Today 17:00 - 18:00</p>
+        <button
+          class="font-semibold mt-2 w-full bg-white text-black py-2 rounded-lg shadow hover:bg-gray-200 transition duration-150 cursor-pointer"
+        >
+          View Calendar
+        </button>
+      </div>
+
+      <!-- Action buttons -->
+      <div class="grid grid-cols-2 gap-4">
+        <button
+          class="flex flex-col items-center p-4 bg-cyan-100 rounded-lg hover:bg-cyan-200 transition duration-150 cursor-pointer"
+        >
+          <img src="Icons/calendar.png" alt="Calendar icon" class="h-13 w-13" />
+          <span>Book a washer</span>
+        </button>
+        <button
+          class="flex flex-col items-center p-4 bg-cyan-100 rounded-lg hover:bg-cyan-200 transition duration-150 cursor-pointer"
+        >
+          <img src="Icons/chat.png" alt="Chat icon" class="h-12 w-12" />
+          <span>Chat with users</span>
+        </button>
+        <button
+          class="flex flex-col items-center p-4 bg-cyan-100 rounded-lg hover:bg-cyan-200 transition duration-150 cursor-pointer"
+        >
+          <img
+            src="Icons/washing_machine.png"
+            alt="Washing machine icon"
+            class="h-12 w-12"
+          />
+          <span>View history</span>
+        </button>
+        <button
+          class="flex flex-col items-center p-4 bg-cyan-100 rounded-lg hover:bg-cyan-200 transition duration-150 cursor-pointer"
+        >
+          <img
+            src="Icons/notification.png"
+            alt="Notification icon"
+            class="h-12 w-12"
+          />
+          <span>Notifications</span>
+        </button>
+      </div>
+
+      <!-- Availability -->
+      <div>
+        <h3 class="font-semibold text-xl mb-2">Availability</h3>
+      </div>
+
+        <!-- Days of the week -->
+        <div class="flex justify-center gap-2 text-sm text-gray-500 mb-1">
+          <div class="w-10 text-center">Mon</div>
+          <div class="w-10 text-center">Tue</div>
+          <div class="w-10 text-center">Wed</div>
+          <div class="w-10 text-center">Thu</div>
+          <div class="w-10 text-center">Fri</div>
+          <div class="w-10 text-center">Sat</div>
+          <div class="w-10 text-center">Sun</div>
+        </div>
+
+        <!-- Numbers -->
+        <div class="flex justify-center gap-2">
+          <div class="w-10 text-center bg-red-200 text-red-800 rounded-lg py-1">
+            18
+          </div>
+          <div
+            class="w-10 text-center bg-green-100 text-green-800 rounded-lg py-1"
+          >
+            19
+          </div>
+          <div
+            class="w-10 text-center bg-green-100 text-green-800 rounded-lg py-1"
+          >
+            20
+          </div>
+          <div class="w-10 text-center bg-red-200 text-red-800 rounded-lg py-1">
+            21
+          </div>
+          <div class="w-10 text-center bg-red-200 text-red-800 rounded-lg py-1">
+            22
+          </div>
+          <div
+            class="w-10 text-center bg-green-100 text-green-800 rounded-lg py-1"
+          >
+            23
+          </div>
+          <div
+            class="w-10 text-center bg-green-100 text-green-800 rounded-lg py-1"
+          >
+            24
+          </div>
+        </div>
+
+      <!-- Free washer notice -->
+      <div
+        class="font-semibold bg-cyan-100 rounded-lg p-4 text-left hover:bg-cyan-200 transition duration-150 cursor-pointer flex items-start gap-2"
+      >
+        <img
+          src="Icons/washing_machine.png"
+          alt="Washing machine icon"
+          class="h-12 w-12"
+        />
+        <div class="flex flex-col">
+          <p>Washer 1 just got free!</p>
+          <p>Book it now</p>
+        </div>
+    </div>
+    </div>
+    
+    <!----------------------------- Home end ----------------------------->
+    <!----------------------------- Calendar start ----------------------->
     <section>
       <div>
         <div
@@ -196,12 +362,77 @@
         </div>
       </div>
     </section>
-    <!-- Calendar end-->
-    <!-- Chat start-->
-    <!-- Chat end-->
-    <!-- Wallet start-->
-    <!-- Wallet end-->
-    <!-- Footer start-->
-    <!-- Footer end-->
+    <!----------------------------- Calendar end ----------------------->
+    <!----------------------------- Chat start ------------------------->
+    <!-- Main content -->
+    <div>
+      <div class="font-sans p-8 space-y-5 bg-white rounded-xl shadow-2xl w-full max-w-3xl mx-auto">
+      <!-- Title -->
+      <div>
+        <h2 class="text-4xl font-bold font-sans mb-6">
+          Wash-Me Chat
+        </h2>
+      <div class= "text-xl font-semibold mb-2 text-gray-700">
+        Gergely
+      </div>
+
+      <!-- Message 1 -->
+        <div>
+          <p class="text-xs mb-1">14:03</p>
+          <div class="bg-cyan-100 p-3 rounded-2xl rounded-bl-none w-fit shadow-sm">
+            Hello! You forgot one pair of socks in the washing machine.
+          </div>
+        </div>
+
+        <!-- Message 2 -->
+        <div class="text-right">
+          <p class="text-xs mb-1">14:05</p>
+          <div class="bg-gray-200 p-3 rounded-2xl rounded-br-none w-fit ml-auto shadow-sm">
+            Thanks! I’ll go pick it up in a minute. Thank you!
+          </div>
+        </div>
+
+        <!-- Message 3 -->
+        <div>
+          <p class="text-xs text-gray-500 mb-1">14:06</p>
+          <div class="bg-cyan-100 p-3 rounded-2xl rounded-bl-none w-fit shadow-sm mb-4">
+            No problem!
+          </div>
+        </div>
+
+        <!-- Input Area -->
+      <div class="bg-white flex items-center space-x-1">
+        <input
+          type="text"
+          placeholder="Type your message..."
+          class="flex-1 p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-400"
+        />
+        <button class="bg-cyan-500 text-white px-4 py-2 rounded-lg hover:bg-cyan-600 transition duration-150 cursor-pointer">
+          Send
+        </button>
+      </div>
+        <!-- Previous Conversations -->
+      <div class="mt-8 pt-4">
+        <h3 class="text-xl font-semibold mb-2 text-gray-700">Previous Conversations</h3>
+
+      <!-- Conversation list -->
+      <div class="space-y-2">
+        <div class="bg-gray-200 p-3 rounded-lg text-gray-700 truncate cursor-pointer hover:bg-gray-100 transition">
+          <strong>Anna:</strong> Hey! Did you finish your laun...
+        </div>
+        <div class="bg-gray-200 p-3 rounded-lg text-gray-700 truncate cursor-pointer hover:bg-gray-100 transition">
+          <strong>John:</strong> Don’t forget to remove the cl...
+        </div>
+        <div class="bg-gray-200 p-3 rounded-lg text-gray-700 truncate cursor-pointer hover:bg-gray-100 transition">
+          <strong>Sophie:</strong> Thanks for leaving me your...
+        </div>
+      </div>
+    </div> 
+    
+    <!----------------------------- Chat end --------------------------->
+    <!----------------------------- Wallet start------------------------>
+    <!----------------------------- Wallet end-------------------------->
+    <!----------------------------- Footer start------------------------>
+    <!----------------------------- Footer end-------------------------->
   </body>
 </html>
