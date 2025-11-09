@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wash-Me</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="font-mono bg-gray-100">
+    <!----------------------------- Navbar start --------------------------->
+    <nav
+      class="font-sans bg-white rounded-xl w-full max-w-5xl mx-auto p-4 flex flex-wrap items-center justify-between"
+    >
+      <!-- Logo -->
+      <div class="flex items-center space-x-2 flex-shrink-0">
+        <h1 class="text-4xl font-bold font-sans">Wash-Me</h1>
+      </div>
+
+      <!-- Tabs -->
+      <div
+        class="flex flex-wrap justify-center sm:justify-start space-x-2 sm:space-x-3 mt-2 sm:mt-0 flex-1"
+      >
+        <a href="#" class="text-gray-700 hover:text-blue-500 font-medium"
+          >Home</a
+        >
+        <a href="#" class="text-gray-700 hover:text-blue-500 font-medium"
+          >Calendar</a
+        >
+        <a href="#" class="text-gray-700 hover:text-blue-500 font-medium"
+          >Chat</a
+        >
+        <a href="#" class="text-gray-700 hover:text-blue-500 font-medium"
+          >Wallet</a
+        >
+      </div>
+
+      <!-- Icons -->
+    <div class="flex items-center space-x-1 mt-2 sm:mt-0">
+      <!-- Language -->
+      <button class="text-gray-700 hover:text-blue-500">
+        <img src="Icons/language.png" alt="Language icon" class="h-4 w-4" />
+      </button>
+      <!-- Notifications -->
+      <button class="text-gray-700 hover:text-blue-500 relative">
+        <img src="Icons/notification2.png" alt="Notification icon" class="h-4 w-4" />
+      </button>
+      <!-- Profile -->
+      <button class="text-gray-700 hover:text-blue-500 relative">
+        <img src="Icons/profile.png" alt="User icon" class="h-4 w-4" />
+      </button>
+    </nav>
+    <!----------------------------- Navbar end ----------------------------->
+
+    <!----------------------------- Home start ----------------------------->
+    <!-- Main content -->
+    <div
+      class="font-sans p-8 space-y-5 bg-white rounded-xl shadow-2xl w-full max-w-3xl mx-auto"
+    >
+      <!-- Greeting -->
+      <div>
+        <h2 class="text-2xl font-bold font-sans">
+          Hi, Mahmoud <span class="animate-wave">👋</span>
+        </h2>
+        <p class="font-sans text-gray-700 mt-1">Ready to wash today?</p>
+      </div>
+
+      <!-- Next booking -->
+      <div class="font-sans bg-cyan-100 rounded-lg p-5">
+        <p class="text-gray-800">Next booking:</p>
+        <p class="font-medium">Washer 1 - Today 17:00 - 18:00</p>
+        <button
+          class="font-semibold mt-2 w-full bg-white text-black py-2 rounded-lg shadow hover:bg-gray-200 transition duration-150 cursor-pointer"
+        >
+          View Calendar
+        </button>
+      </div>
+
+      <!-- Action buttons -->
+      <div class="grid grid-cols-2 gap-4">
+        <button
+          class="flex flex-col items-center p-4 bg-cyan-100 rounded-lg hover:bg-cyan-200 transition duration-150 cursor-pointer"
+        >
+          <img src="Icons/calendar.png" alt="Calendar icon" class="h-13 w-13" />
+          <span>Book a washer</span>
+        </button>
+        <button
+          class="flex flex-col items-center p-4 bg-cyan-100 rounded-lg hover:bg-cyan-200 transition duration-150 cursor-pointer"
+        >
+          <img src="Icons/chat.png" alt="Chat icon" class="h-12 w-12" />
+          <span>Chat with users</span>
+        </button>
+        <button
+          class="flex flex-col items-center p-4 bg-cyan-100 rounded-lg hover:bg-cyan-200 transition duration-150 cursor-pointer"
+        >
+          <img
+            src="Icons/washing_machine.png"
+            alt="Washing machine icon"
+            class="h-12 w-12"
+          />
+          <span>View history</span>
+        </button>
+        <button
+          class="flex flex-col items-center p-4 bg-cyan-100 rounded-lg hover:bg-cyan-200 transition duration-150 cursor-pointer"
+        >
+          <img
+            src="Icons/notification.png"
+            alt="Notification icon"
+            class="h-12 w-12"
+          />
+          <span>Notifications</span>
+        </button>
+      </div>
+
+      <!-- Availability -->
+      <div>
+        <h3 class="font-semibold text-xl mb-2">Availability</h3>
+      </div>
+
+        <!-- Days of the week -->
+        <div class="flex justify-center gap-2 text-sm text-gray-500 mb-1">
+          <div class="w-10 text-center">Mon</div>
+          <div class="w-10 text-center">Tue</div>
+          <div class="w-10 text-center">Wed</div>
+          <div class="w-10 text-center">Thu</div>
+          <div class="w-10 text-center">Fri</div>
+          <div class="w-10 text-center">Sat</div>
+          <div class="w-10 text-center">Sun</div>
+        </div>
+
+        <!-- Numbers -->
+        <div class="flex justify-center gap-2">
+          <div class="w-10 text-center bg-red-200 text-red-800 rounded-lg py-1">
+            18
+          </div>
+          <div
+            class="w-10 text-center bg-green-100 text-green-800 rounded-lg py-1"
+          >
+            19
+          </div>
+          <div
+            class="w-10 text-center bg-green-100 text-green-800 rounded-lg py-1"
+          >
+            20
+          </div>
+          <div class="w-10 text-center bg-red-200 text-red-800 rounded-lg py-1">
+            21
+          </div>
+          <div class="w-10 text-center bg-red-200 text-red-800 rounded-lg py-1">
+            22
+          </div>
+          <div
+            class="w-10 text-center bg-green-100 text-green-800 rounded-lg py-1"
+          >
+            23
+          </div>
+          <div
+            class="w-10 text-center bg-green-100 text-green-800 rounded-lg py-1"
+          >
+            24
+          </div>
+        </div>
+
+      <!-- Free washer notice -->
+      <div
+        class="font-semibold bg-cyan-100 rounded-lg p-4 text-left hover:bg-cyan-200 transition duration-150 cursor-pointer flex items-start gap-2"
+      >
+        <img
+          src="Icons/washing_machine.png"
+          alt="Washing machine icon"
+          class="h-12 w-12"
+        />
+        <div class="flex flex-col">
+          <p>Washer 1 just got free!</p>
+          <p>Book it now</p>
+        </div>
+    </div>
+    </div>
+    
+    <!----------------------------- Home end ----------------------------->
+    <!----------------------------- Calendar start ----------------------->
+    <section>
+      <div>
+        <div
+          class="flex flex-col content-center items-center p-8 bg-white rounded-xl shadow-2xl w-full max-w-3xl mx-auto"
+        >
+          <h2
+            class="text-2xl font-extrabold text-cyan-800 mb-6 rounded-xl p-4 shadow-inner bg-cyan-100 hover:bg-cyan-200 transition duration-150 cursor-pointer"
+          >
+            November, 2025
+          </h2>
+          <div class="pb-4">
+            <button
+              class="mx-2 px-4 py-2 bg-cyan-600 text-white font-semibold rounded-lg shadow-md hover:bg-cyan-700 transition duration-150 cursor-pointer"
+            >
+              <img
+                src="buttons/previous.svg"
+                alt="Previous"
+                class="inline-block w-6 h-6 text-center invert"
+              />
+            </button>
+            <button
+              class="mx-2 px-4 py-2 bg-cyan-600 text-white font-semibold rounded-lg shadow-md hover:bg-cyan-700 transition duration-150 cursor-pointer"
+            >
+              <img
+                src="buttons/previous.svg"
+                alt="Next"
+                class="inline-block w-6 h-6 text-center invert transform scale-y-100 rotate-180"
+              />
+            </button>
+          </div>
+          <div class="p-4 bg-cyan-100 rounded-xl shadow-inner w-full">
+            <table
+              class="border-separate border-spacing-x-2 border-spacing-y-2 w-full"
+            >
+              <thead>
+                <tr>
+                  <th
+                    colspan="3"
+                    class="p-4 bg-cyan-600 text-white text-xl font-semibold rounded-lg shadow-md"
+                  >
+                    Mon 19
+                  </th>
+                </tr>
+                <tr>
+                  <th
+                    class="px-4 py-2 bg-cyan-700 text-white rounded-lg shadow-md w-1/4 lg:w-1/5"
+                  >
+                    time
+                  </th>
+                  <th
+                    colspan="2"
+                    class="px-4 py-2 bg-cyan-700 text-white rounded-lg shadow-md relative w-3/4 lg:w-4/5"
+                  >
+                    <span
+                      class="flex items-center justify-center cursor-pointer"
+                      id="washer-dropdown-toggle"
+                      >Washer 1<svg
+                        class="w-4 h-4 ml-1 fill-current"
+                        viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                          clip-rule="evenodd"
+                          fill-rule="evenodd"
+                        ></path>
+                      </svg>
+                    </span>
+                    <div
+                      id="washer-menu"
+                      class="hidden absolute z-10 top-full left-1/2 transform -translate-x-1/2 mt-2 w-48 bg-white rounded-md shadow-lg ring-1 ring-black ring-opacity-5"
+                    >
+                      <div class="py-1">
+                        <a
+                          href="#"
+                          class="block px-4 py-2 text-sm text-gray-700 hover:bg-cyan-100"
+                          >Washer 1</a
+                        >
+                        <a
+                          href="#"
+                          class="block px-4 py-2 text-sm text-gray-700 hover:bg-cyan-100"
+                          >Washer 2</a
+                        >
+                        <a
+                          href="#"
+                          class="block px-4 py-2 text-sm text-gray-700 hover:bg-cyan-100"
+                          >Washer 3</a
+                        >
+                      </div>
+                    </div>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td
+                    class="px-4 py-2 bg-cyan-600 text-white text-center font-medium rounded-lg w-1/4 lg:w-1/5"
+                  >
+                    8 <br />-<br />
+                    10
+                  </td>
+                  <td
+                    colspan="2"
+                    class="px-4 py-2 bg-green-400 text-gray-800 text-center font-bold rounded-lg cursor-pointer hover:bg-green-500 transition duration-150 relative w-3/4 lg:w-4/5"
+                  >
+                    Free
+                  </td>
+                </tr>
+                <tr>
+                  <td
+                    class="px-4 py-2 bg-cyan-600 text-white text-center font-medium rounded-lg w-1/4 lg:w-1/5"
+                  >
+                    10 <br />-<br />
+                    12
+                  </td>
+                  <td
+                    colspan="2"
+                    class="px-4 py-2 bg-green-400 text-gray-800 text-center font-bold rounded-lg cursor-pointer hover:bg-green-500 transition duration-150 relative w-3/4 lg:w-4/5"
+                  >
+                    Free
+                  </td>
+                </tr>
+                <tr>
+                  <td
+                    class="px-4 py-2 bg-cyan-600 text-white text-center font-medium rounded-lg w-1/4 lg:w-1/5"
+                  >
+                    12 <br />-<br />
+                    14
+                  </td>
+                  <td
+                    colspan="2"
+                    class="px-4 py-2 bg-red-500 text-white text-center font-bold rounded-lg cursor-pointer hover:bg-red-600 transition duration-150 relative w-3/4 lg:w-4/5"
+                  >
+                    Booked
+                  </td>
+                </tr>
+                <tr>
+                  <td
+                    class="px-4 py-2 bg-cyan-600 text-white text-center font-medium rounded-lg w-1/4 lg:w-1/5"
+                  >
+                    14 <br />-<br />
+                    16
+                  </td>
+                  <td
+                    colspan="2"
+                    class="px-4 py-2 bg-green-400 text-gray-800 text-center font-bold rounded-lg cursor-pointer hover:bg-green-500 transition duration-150 relative w-3/4 lg:w-4/5"
+                  >
+                    Free
+                  </td>
+                </tr>
+                <tr>
+                  <td
+                    class="px-4 py-2 bg-cyan-600 text-white text-center font-medium rounded-lg w-1/4 lg:w-1/5"
+                  >
+                    16 <br />-<br />
+                    18
+                  </td>
+                  <td
+                    colspan="2"
+                    class="px-4 py-2 bg-green-400 text-gray-800 text-center font-bold rounded-lg cursor-pointer hover:bg-green-500 transition duration-150 relative w-3/4 lg:w-4/5"
+                  >
+                    Free
+                  </td>
+                </tr>
+                <tr>
+                  <td
+                    class="px-4 py-2 bg-cyan-600 text-white text-center font-medium rounded-lg w-1/4 lg:w-1/5"
+                  >
+                    18 <br />-<br />
+                    20
+                  </td>
+                  <td
+                    colspan="2"
+                    class="px-4 py-2 bg-red-500 text-white text-center font-bold rounded-lg cursor-pointer hover:bg-red-600 transition duration-150 relative w-3/4 lg:w-4/5"
+                  >
+                    Booked
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!----------------------------- Calendar end ----------------------->
+    <!----------------------------- Chat start ------------------------->
+    <!-- Main content -->
+    <div>
+      <div class="font-sans p-8 space-y-5 bg-white rounded-xl shadow-2xl w-full max-w-3xl mx-auto">
+      <!-- Title -->
+      <div>
+        <h2 class="text-4xl font-bold font-sans mb-6">
+          Wash-Me Chat
+        </h2>
+      <div class= "text-xl font-semibold mb-2 text-gray-700">
+        Gergely
+      </div>
+
+      <!-- Message 1 -->
+        <div>
+          <p class="text-xs mb-1">14:03</p>
+          <div class="bg-cyan-100 p-3 rounded-2xl rounded-bl-none w-fit shadow-sm">
+            Hello! You forgot one pair of socks in the washing machine.
+          </div>
+        </div>
+
+        <!-- Message 2 -->
+        <div class="text-right">
+          <p class="text-xs mb-1">14:05</p>
+          <div class="bg-gray-200 p-3 rounded-2xl rounded-br-none w-fit ml-auto shadow-sm">
+            Thanks! I’ll go pick it up in a minute. Thank you!
+          </div>
+        </div>
+
+        <!-- Message 3 -->
+        <div>
+          <p class="text-xs text-gray-500 mb-1">14:06</p>
+          <div class="bg-cyan-100 p-3 rounded-2xl rounded-bl-none w-fit shadow-sm mb-4">
+            No problem!
+          </div>
+        </div>
+
+        <!-- Input Area -->
+      <div class="bg-white flex items-center space-x-1">
+        <input
+          type="text"
+          placeholder="Type your message..."
+          class="flex-1 p-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-400"
+        />
+        <button class="bg-cyan-500 text-white px-4 py-2 rounded-lg hover:bg-cyan-600 transition duration-150 cursor-pointer">
+          Send
+        </button>
+      </div>
+        <!-- Previous Conversations -->
+      <div class="mt-8 pt-4">
+        <h3 class="text-xl font-semibold mb-2 text-gray-700">Previous Conversations</h3>
+
+      <!-- Conversation list -->
+      <div class="space-y-2">
+        <div class="bg-gray-200 p-3 rounded-lg text-gray-700 truncate cursor-pointer hover:bg-gray-100 transition">
+          <strong>Anna:</strong> Hey! Did you finish your laun...
+        </div>
+        <div class="bg-gray-200 p-3 rounded-lg text-gray-700 truncate cursor-pointer hover:bg-gray-100 transition">
+          <strong>John:</strong> Don’t forget to remove the cl...
+        </div>
+        <div class="bg-gray-200 p-3 rounded-lg text-gray-700 truncate cursor-pointer hover:bg-gray-100 transition">
+          <strong>Sophie:</strong> Thanks for leaving me your...
+        </div>
+      </div>
+    </div> 
+    
+    <!----------------------------- Chat end --------------------------->
+    <!----------------------------- Wallet start------------------------>
+    <!----------------------------- Wallet end-------------------------->
+    <!----------------------------- Footer start------------------------>
+    <!----------------------------- Footer end-------------------------->
+  </body>
+</html>
