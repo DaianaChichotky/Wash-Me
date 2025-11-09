@@ -1,17 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Wash-Me</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-</head>
-<body>
+  </head>
+  <body class="font-mono bg-gray-100">
     <!-- Navbar start-->
     <!-- Navbar end-->
     <!-- Home start-->
     <!-- Home end-->
     <!-- Calendar start-->
+    <section>
+      <div>
+        <div class="flex flex-col content-center items-center p-8 bg-white rounded-xl shadow-2xl">
+          <h2 class="text-3xl font-extrabold text-cyan-800 mb-6">Wash-Me Calendar</h2>
+          <div class=" p-4 bg-cyan-100 rounded-xl shadow-inner">
+            <table class="border-separate border-spacing-x-2 border-spacing-y-2">
+              <thead>
+                <tr>
+                  <th colspan="4" class="p-4 bg-cyan-600 text-white text-xl font-semibold rounded-lg shadow-md">Mon 19, 2025</th>
+                </tr>
+                <tr>
+                  <th class="px-4 py-2 bg-cyan-700 text-white rounded-lg shadow-md">time</th>
+                  <th class="px-4 py-2 bg-cyan-700 text-white rounded-lg shadow-md">Washer 1</th>
+                  <th class="px-4 py-2 bg-cyan-700 text-white rounded-lg shadow-md">Washer 2</th>
+                  <th class="px-4 py-2 bg-cyan-700 text-white rounded-lg shadow-md">Washer 3</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="px-4 py-2 bg-cyan-600 text-white font-medium rounded-lg">8 <br>-<br> 10</td>
+                  <td class="px-4 py-2 bg-green-400 text-gray-800 text-center font-bold rounded-lg cursor-pointer hover:bg-green-500 transition duration-150">Free</td>
+                  <td class="px-4 py-2 bg-red-500 text-white text-center font-bold rounded-lg cursor-pointer hover:bg-red-600 transition duration-150">Booked</td>
+                  <td class="px-4 py-2 bg-green-400 text-gray-800 text-center font-bold rounded-lg cursor-pointer hover:bg-green-500 transition duration-150">Free</td>
+                </tr>
+                <tr>
+                  <td class="px-4 py-2 bg-cyan-600 text-white font-medium rounded-lg">10 <br>-<br> 12</td>
+                  <td class="px-4 py-2 bg-green-400 text-gray-800 text-center font-bold rounded-lg cursor-pointer hover:bg-green-500 transition duration-150">Free</td>
+                  <td class="px-4 py-2 bg-red-500 text-white text-center font-bold rounded-lg cursor-pointer hover:bg-red-600 transition duration-150">Booked</td>
+                  <td class="px-4 py-2 bg-red-500 text-white text-center font-bold rounded-lg cursor-pointer hover:bg-red-600 transition duration-150">Booked</td>
+                </tr>
+                <tr>
+                  <td class="px-4 py-2 bg-cyan-600 text-white font-medium rounded-lg">12 <br>-<br> 14</td>
+                  <td class="px-4 py-2 bg-red-500 text-white text-center font-bold rounded-lg cursor-pointer hover:bg-red-600 transition duration-150">Booked</td>
+                  <td class="px-4 py-2 bg-red-500 text-white text-center font-bold rounded-lg cursor-pointer hover:bg-red-600 transition duration-150">Booked</td>
+                  <td class="px-4 py-2 bg-green-400 text-gray-800 text-center font-bold rounded-lg cursor-pointer hover:bg-green-500 transition duration-150">Free</td>
+                </tr>
+                <tr>
+                  <td class="px-4 py-2 bg-cyan-600 text-white font-medium rounded-lg">14 <br>-<br> 16</td>
+                  <td class="px-4 py-2 bg-green-400 text-gray-800 text-center font-bold rounded-lg cursor-pointer hover:bg-green-500 transition duration-150">Free</td>
+                  <td class="px-4 py-2 bg-red-500 text-white text-center font-bold rounded-lg cursor-pointer hover:bg-red-600 transition duration-150">Booked</td>
+                  <td class="px-4 py-2 bg-green-400 text-gray-800 text-center font-bold rounded-lg cursor-pointer hover:bg-green-500 transition duration-150">Free</td>
+                </tr>
+                <tr>
+                  <td class="px-4 py-2 bg-cyan-600 text-white font-medium rounded-lg">16 <br>-<br> 18</td>
+                  <td class="px-4 py-2 bg-green-400 text-gray-800 text-center font-bold rounded-lg cursor-pointer hover:bg-green-500 transition duration-150">Free</td>
+                  <td class="px-4 py-2 bg-red-500 text-white text-center font-bold rounded-lg cursor-pointer hover:bg-red-600 transition duration-150">Booked</td>
+                  <td class="px-4 py-2 bg-green-400 text-gray-800 text-center font-bold rounded-lg cursor-pointer hover:bg-green-500 transition duration-150">Free</td>
+                </tr>
+                <tr>
+                  <td class="px-4 py-2 bg-cyan-600 text-white font-medium rounded-lg">18 <br>-<br> 20</td>
+                  <td class="px-4 py-2 bg-red-500 text-white text-center font-bold rounded-lg cursor-pointer hover:bg-red-600 transition duration-150">Booked</td>
+                  <td class="px-4 py-2 bg-red-500 text-white text-center font-bold rounded-lg cursor-pointer hover:bg-red-600 transition duration-150">Booked</td>
+                  <td class="px-4 py-2 bg-red-500 text-white text-center font-bold rounded-lg cursor-pointer hover:bg-red-600 transition duration-150">Booked</td>
+                </tr>
+              </tbody>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- Calendar end-->
     <!-- Chat start-->
     <!-- Chat end-->
@@ -19,6 +78,5 @@
     <!-- Wallet end-->
     <!-- Footer start-->
     <!-- Footer end-->
-    
-</body>
+  </body>
 </html>
