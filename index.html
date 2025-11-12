@@ -9,7 +9,7 @@
   <body class="font-mono bg-gray-100">
     <!----------------------------- Navbar start --------------------------->
     <nav
-      class="font-sans bg-white rounded-xl w-full max-w-5xl mx-auto p-4 flex flex-wrap items-center justify-between"
+      class="font-sans bg-white rounded-xl w-full max-w-3xl mx-auto mb-3 p-4 flex flex-wrap items-center justify-between"          
     >
       <!-- Logo -->
       <div class="flex items-center space-x-2 flex-shrink-0">
@@ -371,7 +371,7 @@
       <!-- Title -->
       <div>
         <h2 class="text-4xl font-bold font-sans mb-6">
-          Wash-Me Chat
+          Chat
         </h2>
       <div class= "text-xl font-semibold mb-2 text-gray-700">
         Gergely
@@ -435,20 +435,22 @@
     <!----------------------------- JS Navigation ----------------------------->
     <script>
       function showPage(pageId) {
-        // Oculta todas las secciones
+        // hide all the sections
         document.querySelectorAll("#home, #chat, #wallet, #calendar").forEach((section) => {
-          section.classList.add("hidden");
-        });
+      section.classList.add("hidden");
+      });
 
-        // Muestra la sección seleccionada
+        // show selected section
         const sectionToShow = document.getElementById(pageId);
-        if (sectionToShow) {
-          sectionToShow.classList.remove("hidden");
+      if (sectionToShow) {
+        sectionToShow.classList.remove("hidden");
+          }
         }
 
-        // Opcional: hacer scroll al inicio
-        window.scrollTo({ top: 0, behavior: "smooth" });
-      }
+        // home by default
+        window.addEventListener("DOMContentLoaded", () => {
+          showPage("home");
+        });
     </script>
 
     <!----------------------------- Wallet start------------------------>
