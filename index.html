@@ -6,7 +6,7 @@
     <title>Wash-Me</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
-  <body class="font-mono bg-gray-100">
+  <body class="font-sans bg-gray-100">
 
     <!----------------------------- Navbar start --------------------------->
     
@@ -173,7 +173,7 @@
     
     <!----------------------------- Home end ----------------------------->
     <!----------------------------- Calendar start ----------------------->
-    <section id="calendar-content" class="flex flex-col items-center gap-4 p-8 bg-white rounded-xl shadow-2xl w-full max-w-3xl mx-auto">
+    <section id="calendar-content" class="flex flex-col items-center gap-4 p-8 mb-4 bg-white rounded-xl w-full max-w-3xl mx-auto">
           <h2
             class="text-2xl font-extrabold text-cyan-800 mb-6 rounded-xl p-4 shadow-md bg-cyan-100 hover:bg-cyan-200 transition duration-150 cursor-pointer"
           >
@@ -204,7 +204,7 @@
               class="w-full max-w-lg md:max-w-3xl mx-auto"
             >
             <table
-              class="p-4 rounded-xl shadow-md border-separate border-spacing-x-2 border-spacing-y-2 w-full"
+              class="p-4 rounded-xl shadow-2xl border-separate border-spacing-x-2 border-spacing-y-2 w-full"
             >
               <thead>
                 <tr>
@@ -245,7 +245,7 @@
                   </td>
                   <td
                     colspan="2"
-                    class="px-4 py-2 bg-green-100 text-green-800 text-center font-bold rounded-lg cursor-pointer hover:bg-green-200 transition duration-150 relative w-3/4 lg:w-4/5"
+                    class="px-4 py-2 bg-green-100 text-green-800 text-center font-bold rounded-lg cursor-pointer hover:bg-green-200 transition duration-150 relative w-3/4 lg:w-4/5 shadow-md"
                   >
                     Free
                   </td>
@@ -259,7 +259,7 @@
                   </td>
                   <td
                     colspan="2"
-                    class="px-4 py-2 bg-green-100 text-green-800 text-center font-bold rounded-lg cursor-pointer hover:bg-green-200 transition duration-150 relative w-3/4 lg:w-4/5"
+                    class="px-4 py-2 bg-green-100 text-green-800 text-center font-bold rounded-lg cursor-pointer hover:bg-green-200 transition duration-150 relative w-3/4 lg:w-4/5 shadow-md"
                   >
                     Free
                   </td>
@@ -273,7 +273,7 @@
                   </td>
                   <td
                     colspan="2"
-                    class="px-4 py-2 bg-red-200 text-red-800 text-center font-bold rounded-lg cursor-pointer hover:bg-red-300 transition duration-150 relative w-3/4 lg:w-4/5"
+                    class="px-4 py-2 bg-red-200 text-red-800 text-center font-bold rounded-lg cursor-pointer hover:bg-red-300 transition duration-150 relative w-3/4 lg:w-4/5 shadow-md"
                   >
                     John, Floor 4
                   </td>
@@ -287,7 +287,7 @@
                   </td>
                   <td
                     colspan="2"
-                    class="px-4 py-2 bg-green-100 text-green-800 text-center font-bold rounded-lg cursor-pointer hover:bg-green-200 transition duration-150 relative w-3/4 lg:w-4/5"
+                    class="px-4 py-2 bg-green-100 text-green-800 text-center font-bold rounded-lg cursor-pointer hover:bg-green-200 transition duration-150 relative w-3/4 lg:w-4/5 shadow-md"
                   >
                     Free
                   </td>
@@ -301,7 +301,7 @@
                   </td>
                   <td
                     colspan="2"
-                    class="px-4 py-2 bg-green-100 text-green-800 text-center font-bold rounded-lg cursor-pointer hover:bg-green-200 transition duration-150 relative w-3/4 lg:w-4/5"
+                    class="px-4 py-2 bg-green-100 text-green-800 text-center font-bold rounded-lg cursor-pointer hover:bg-green-200 transition duration-150 relative w-3/4 lg:w-4/5 shadow-md"
                   >
                     Free
                   </td>
@@ -315,7 +315,7 @@
                   </td>
                   <td
                     colspan="2"
-                    class="px-4 py-2 bg-red-200 text-red-800 text-center font-bold rounded-lg cursor-pointer hover:bg-red-300 transition duration-150 relative w-3/4 lg:w-4/5"
+                    class="px-4 py-2 bg-red-200 text-red-800 text-center font-bold rounded-lg cursor-pointer hover:bg-red-300 transition duration-150 relative w-3/4 lg:w-4/5 shadow-md"
                   >
                     Anna, Floor 0
                   </td>
@@ -325,11 +325,11 @@
           </div>
         </div>
       <div id="submitform"
-           class="w-full max-w-lg md:max-w-3/4 mx-auto">
-        <form class="flex flex-col content-center items-center p-8 bg-cyan-100 rounded-lg shadow-md w-full">
+           class="w-full max-w-lg md:max-w-3/4 mx-auto pt-8 p-8">
+        <form class="flex flex-col content-center items-center p-8 bg-linear-to-t from-cyan-50 to-cyan-100 rounded-lg shadow-2xl w-full mx-auto">
           <input class="bg-white text-center rounded-xl shadow-md w-full p-2" type="text" name="name" placeholder="Name" required>
           <br>
-          <input class="bg-white text-center rounded-xl shadow-md w-full p-2" type="number" name="floor" placeholder="Floor" required>
+          <input class="bg-white text-center rounded-xl shadow-md w-full p-2" type="textnumber" name="floor" placeholder="Floor" required>
           <br>
           <select class="bg-white text-center rounded-xl shadow-md w-full p-2" name="washer" required>
             <option value="1">Washer 1</option>
@@ -346,9 +346,9 @@
             <option value="18-20">18-20</option>
           </select>
           <br>
-          <input class="bg-white text-center rounded-xl shadow-md w-full p-2" type="date" required>
+          <input class="bg-white rounded-xl shadow-md w-full p-2" type="date" required>
           <br>
-          <button class="bg-cyan-500 text-white p-2 rounded-lg shadow-md hover:bg-cyan-600 transition duration-150 cursor-pointer" type="submit">Book</button>
+          <button class="bg-cyan-500 text-white font-bold px-4 py-2 rounded-lg shadow-md hover:bg-cyan-600 transition duration-150 cursor-pointer" type="submit">Book Me</button>
         </form>
       </div>
     </section>
@@ -424,34 +424,10 @@
     </section>
     
     <!----------------------------- Chat end --------------------------->
-<<<<<<< HEAD
-
-    <!----------------------------- JS Navigation ----------------------------->
-    <!-- <script>
-      function showPage(pageId) {
-        // hide all the sections
-        document.querySelectorAll("#home, #chat, #wallet, #calendar").forEach((section) => {
-      section.classList.add("hidden");
-      });
-
-        // show selected section
-        const sectionToShow = document.getElementById(pageId);
-      if (sectionToShow) {
-        sectionToShow.classList.remove("hidden");
-          }
-        }
-
-        // home by default
-        window.addEventListener("DOMContentLoaded", () => {
-          showPage("home");
-        });
-    </script> -->
-
-=======
->>>>>>> main
     <!----------------------------- Wallet start------------------------>
-    <section id="wallet-content">
-      <div class="flex flex-wrap justify-center gap-4 p-8 bg-white w-full max-w-3xl mx-auto">
+    <section id="wallet-content" class="flex flex-col justify-center gap-4 p-8 bg-white rounded-xl max-w-3xl mx-auto">
+      <h1 class="text-center font-bold text-4xl text-shadow-2xs">Choose your Subscription Type!</h1>
+      <div class="flex flex-wrap justify-center gap-4 p-8 max-w-3xl mx-auto">
         <div class="bg-cyan-100 p-8 text-center rounded-xl shadow-xl text-cyan-800">
           <h3 class="font-bold text-2xl text-shadow-2xs pb-4">
             Monthly
@@ -461,7 +437,7 @@
             <li>20$ / Month</li>
             <li>No manual recharging</li>
           </ul>
-          <button class="bg-cyan-500 p-2 mt-4 rounded-lg text-white hover:bg-cyan-600 transition duration-150 cursor-pointer shadow-md" type="submit">Choose</button>
+          <button class="bg-cyan-500 p-2 mt-4 rounded-lg text-white hover:bg-cyan-600 transition duration-150 cursor-pointer shadow-md" type="submit">Subscribe</button>
         </div>
           <div class="bg-cyan-100 p-8 text-center rounded-xl shadow-xl text-cyan-800">
           <h3 class="font-bold text-2xl text-shadow-2xs pb-4">
@@ -472,7 +448,7 @@
             <li>200$ / Year</li>
             <li>No manual recharging</li>
           </ul>
-          <button class="bg-cyan-500 p-2 mt-4 rounded-lg text-white hover:bg-cyan-600 transition duration-150 cursor-pointer shadow-md" type="submit">Choose</button>
+          <button class="bg-cyan-500 p-2 mt-4 rounded-lg text-white hover:bg-cyan-600 transition duration-150 cursor-pointer shadow-md" type="submit">Subscribe</button>
         </div>
           <div class="bg-cyan-100 p-8 text-center rounded-xl shadow-xl text-cyan-800">
           <h3 class="font-bold text-2xl text-shadow-2xs pb-4">
@@ -483,24 +459,43 @@
             <li>2$ / round</li>
             <li>Reload your Keycard</li>
           </ul>
-          <button class="bg-cyan-500 p-2 mt-4 rounded-lg text-white hover:bg-cyan-600 transition duration-150 cursor-pointer shadow-md" type="submit">Choose</button>
+          <button class="bg-cyan-500 p-2 mt-4 rounded-lg text-white hover:bg-cyan-600 transition duration-150 cursor-pointer shadow-md" type="submit">Select</button>
         </div>
       </div>
-      <div>
-        <label for="purse">Wallet</label>
-        <form id="purse" name="purse">
-          <label for="balance">Balance:</label>
-          <input type="number" id="balance" name="balance" placeholder="0.00$" min="0" step="0.01" name="wallet_balance" required>
+      <div class="bg-linear-65 from-cyan-800 to-cyan-500 text-white font-mono flex flex-col justify-items-center w-full max-w-90% mx-auto shadow-2xl rounded-xl">
+        <form id="purse" name="purse" class="flex flex-col p-8 shadow-md rounded-md gap-2">
+          <label class="font-bold text-2xl" for="purse">Wallet</label>
           <br>
-          <label for="keycard">Card N°:</label>
-          <input name="keycard" id="keycard" type="text" placeholder="NN1234F6" required>
+          <div class="flex flex-wrap justify-between">
+            <label for="balance">Balance:</label>
+            <input class="bg-white text-cyan-800 text-end rounded-md placeholder:mr-4 grow sm:ml-4 md:ml-4" type="text" id="balance" name="balance" placeholder="0.00$" min="0" step="0.01" name="wallet_balance" required>
+          </div>
           <br>
+          <div class="flex flex-wrap justify-between">
+            <label for="keycard">Card N°:</label>
+            <input class="bg-white text-cyan-800 text-end placeholder:mr-4 rounded-md grow sm:ml-4 md:ml-4" name="keycard" id="keycard" type="text" placeholder="NN1234F6" required>
+          </div>
+          <br>
+          <div class="flex flex-wrap justify-between">
           <label for="payment">Payment:</label>
-          <ul>
-            <li><a href="#"><img src=""/></a></li>
-            <li><a href="#"><img src=""/></a></li>
-            <li><a href="#"><img src=""/></a></li>
-          </ul>
+            <div class="flex flex-wrap justify-around align-center bg-white rounded-md px-2 grow sm:ml-4 md:ml-4">
+              <div class="flex">
+                <input name="payment_method" id="transfer" type="radio">
+                <label for="transfer"><img class="m-2 h-10 w-10 hover:cursor-pointer" src="icons/bankTransfer.png" alt="Bank Transfer"/></label>
+              </div>
+              <div class="flex">
+                <input name="payment_method" id="visa" type="radio">
+                <label for="visa"><img class="m-2 h-10 w-10 hover:cursor-pointer" src="icons/visa.png" alt="Visa"/></label>
+              </div>
+              <div class="flex">
+                <input name="payment_method" id="paypal" id="paypal" type="radio">
+                <label for="paypal"><img class="m-2 h-10 w-10 hover:cursor-pointer" src="icons/paypalfont.png" alt="PayPal"/></label>
+              </div>
+            </div>
+            </div>
+            <div class="flex justify-end">
+              <input class="bg-cyan-100 text-cyan-800 font-bold rounded-md p-2 hover:bg-cyan-200 transition duration-150 cursor-pointer shadow-2xl mt-4" type="submit" value="Continue">
+            </div>
         </form>
       </div>
     </section>
