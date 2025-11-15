@@ -29,15 +29,22 @@
       <!-- Icons -->
     <div class="space-x-1">
       <!-- Language -->
-      <button class="text-gray-700 transition duration-150 cursor-pointer">
-        <img src="icons/language.png" alt="Language icon" class="h-4 w-4" />
-      </button>
+          <button class="transition duration-150 cursor-pointer">
+            <img src="icons/language.png" alt="Language icon" class="h-4 w-4" />
+          </button>
+      <select name=""> 
+        <option value="EN">EN</option>
+        <option value="ES">ES</option>
+        <option value="FR">FR</option>
+        <option value="IT">IT</option>
+      </select>
+        
       <!-- Notifications -->
-      <button class="text-gray-700 transition duration-150 cursor-pointer">
+      <button class="transition duration-150 cursor-pointer">
         <img src="icons/notification2.png" alt="Notification icon" class="h-4 w-4" />
       </button>
       <!-- Profile -->
-      <button class="text-gray-700 transition duration-150 cursor-pointer">
+      <button class="transition duration-150 cursor-pointer">
         <img src="icons/profile.png" alt="User icon" class="h-4 w-4" />
       </button>
     </nav>
@@ -173,13 +180,16 @@
     
     <!----------------------------- Home end ----------------------------->
     <!----------------------------- Calendar start ----------------------->
-    <section id="calendar-content" class="flex flex-col items-center gap-4 p-8 bg-white rounded-xl shadow-2xl w-full max-w-3xl mx-auto">
+    <section id="calendar-content" class="font-sans flex flex-col items-center gap-4 p-8 bg-white rounded-xl w-full max-w-3xl mx-auto mb-3">
+        <h2 class="text-4xl font-bold font-sans mb-6 self-start">
+          Calendar
+        </h2>
           <h2
-            class="text-2xl font-extrabold text-cyan-800 mb-6 rounded-xl p-4 shadow-md bg-cyan-100 hover:bg-cyan-200 transition duration-150 cursor-pointer"
+            class="text-2xl font-extrabold text-cyan-800 mb-2 rounded-xl p-4 shadow-md bg-cyan-100 hover:bg-cyan-200 transition duration-150 cursor-pointer"
           >
             Daily
           </h2>
-          <div class="pb-4">
+          <div class="pb-0">
             <button
               class="mx-2 px-4 py-2 bg-cyan-50 font-semibold rounded-lg shadow-md hover:bg-cyan-200 transition duration-150 cursor-pointer"
             >
@@ -358,7 +368,7 @@
     <!-- Main content -->
      <section id="chat-content">
     <div>
-      <div class= "font-sans bg-white rounded-xl w-full max-w-3xl mx-auto p-6 mb-3 space-y-5">
+      <div class= "font-sans bg-white rounded-xl w-full max-w-3xl mx-auto p-6 mb-3 space-y-5 mb-3">
         
       <!-- Title -->
       <div>
