@@ -7,6 +7,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
   <body class="font-sans bg-gray-100">
+    <a id="top"></a>
 
     <!----------------------------- Navbar start --------------------------->
     
@@ -29,15 +30,22 @@
       <!-- Icons -->
     <div class="space-x-1">
       <!-- Language -->
-      <button class="text-gray-700 transition duration-150 cursor-pointer">
-        <img src="icons/language.png" alt="Language icon" class="h-4 w-4" />
-      </button>
+          <button class="transition duration-150 cursor-pointer">
+            <img src="icons/language.png" alt="Language icon" class="h-4 w-4" />
+          </button>
+      <select name=""> 
+        <option value="EN">EN</option>
+        <option value="ES">ES</option>
+        <option value="FR">FR</option>
+        <option value="IT">IT</option>
+      </select>
+        
       <!-- Notifications -->
-      <button class="text-gray-700 transition duration-150 cursor-pointer">
+      <button class="transition duration-150 cursor-pointer">
         <img src="icons/notification2.png" alt="Notification icon" class="h-4 w-4" />
       </button>
       <!-- Profile -->
-      <button class="text-gray-700 transition duration-150 cursor-pointer">
+      <button class="transition duration-150 cursor-pointer">
         <img src="icons/profile.png" alt="User icon" class="h-4 w-4" />
       </button>
     </nav>
@@ -168,18 +176,24 @@
           <p>Book it now</p>
         </div>
     </div>
-    </div>
+    <div class="text-right mt-10">
+        <a href="#top"
+          class="inline-block bg-cyan-500 text-white text-xl font-bold px-6 py-3 rounded-full shadow-lg hover:bg-cyan-600 transition duration-200">⬆️ Go to Top</a>
+      </div>
     </section>
     
     <!----------------------------- Home end ----------------------------->
     <!----------------------------- Calendar start ----------------------->
-    <section id="calendar-content" class="flex flex-col items-center gap-4 p-8 mb-4 bg-white rounded-xl w-full max-w-3xl mx-auto">
+    <section id="calendar-content" class="flex flex-col items-center gap-4 p-8 bg-white rounded-xl w-full max-w-3xl mx-auto mb-3">
+        <h2 class="text-4xl font-bold font-sans mb-6 self-start">
+          Calendar
+        </h2>
           <h2
-            class="text-2xl font-extrabold text-cyan-800 mb-6 rounded-xl p-4 shadow-md bg-cyan-100 hover:bg-cyan-200 transition duration-150 cursor-pointer"
+            class="text-2xl font-extrabold text-cyan-800 mb-2 rounded-xl p-4 shadow-md bg-cyan-100 hover:bg-cyan-200 transition duration-150 cursor-pointer"
           >
             Daily
           </h2>
-          <div class="pb-4">
+          <div class="pb-0">
             <button
               class="mx-2 px-4 py-2 bg-cyan-50 font-semibold rounded-lg shadow-md hover:bg-cyan-200 transition duration-150 cursor-pointer"
             >
@@ -351,6 +365,10 @@
           <button class="bg-cyan-500 text-white font-bold px-4 py-2 rounded-lg shadow-md hover:bg-cyan-600 transition duration-150 cursor-pointer" type="submit">Book Me</button>
         </form>
       </div>
+      <div class="text-right mt-10 self-end">
+        <a href="#top"
+          class="inline-block bg-cyan-500 text-white text-xl font-bold px-6 py-3 rounded-full shadow-lg hover:bg-cyan-600 transition duration-200">⬆️ Go to Top</a>
+      </div>
     </section>
 
     <!----------------------------- Calendar end ----------------------->
@@ -421,6 +439,12 @@
         </div>
       </div>
     </div> 
+
+    <!-- Go to top -->
+     <div class="text-right mt-10">
+        <a href="#top"
+          class="inline-block bg-cyan-500 text-white text-xl font-bold px-6 py-3 rounded-full shadow-lg hover:bg-cyan-600 transition duration-200">⬆️ Go to Top</a>
+      </div>
     </section>
     
     <!----------------------------- Chat end --------------------------->
@@ -501,6 +525,12 @@
     </section>
     <!----------------------------- Wallet end-------------------------->
     <!----------------------------- Footer start------------------------>
+    <footer>
+    <div>
+      <div class= "font-sans w-full max-w-3xl mx-auto p-2 mb-3 text-center">
+      <p>© 2025 WashTime — Central Building</p>
+    </footer>
     <!----------------------------- Footer end-------------------------->
+
   </body>
 </html>
